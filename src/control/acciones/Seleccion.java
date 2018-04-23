@@ -6,7 +6,7 @@ public class Seleccion implements Seleccionable{
 
 	@Override
 	public boolean seleccionarMoneda() {
-		// TODO Auto-generated method stub
+		System.out.println("s");
 		return false;
 	}
 

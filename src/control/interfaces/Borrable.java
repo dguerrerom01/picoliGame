@@ -8,5 +8,5 @@ public interface Borrable {
 	 * 2 usos
 	 * @param Color el color elegido a borrar
 	 */
-	public boolean borrarColor(Colores Color);
+	 boolean borrarColor();
 }
