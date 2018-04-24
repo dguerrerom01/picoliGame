@@ -22,9 +22,6 @@ public class ParaUI extends UI{
 		super();
 		this.game = new Game();
 		this.listener=new MyActionListener(this);
-		uibotones.getBtnBarajarfilas().addActionListener(listener);
-		uibotones.getBtnBorrarcolor().addActionListener(listener);
-		uibotones.getBtnElegirColor().addActionListener(listener);
 		uicola.getBtnSeleccionarColor().addActionListener(listener);
 		prepararGame();
 		jugar();
@@ -64,23 +61,13 @@ public class ParaUI extends UI{
 		}
 
 	}
+	
+	public void toSeleccion(){
+		this.seleccion.seleccionarMoneda(this);
+	}
+
 	public Game getGame() {
 		return game;
-	}
-	public MyActionListener getListener() {
-		return listener;
-	}
-	public Seleccion getSeleccion() {
-		return seleccion;
-	}
-	public Pide getPide() {
-		return pide;
-	}
-	public Baraja getBaraja() {
-		return baraja;
-	}
-	public Borra getBorra() {
-		return borra;
 	}
 	
 	

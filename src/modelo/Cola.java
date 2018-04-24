@@ -12,7 +12,7 @@ public class Cola<T> {
 	public T desencolar(){
 		return this.cola.removeLast();
 	}
-	public Collection<T> getCola(){
+	public ArrayDeque<T> getCollectionCola(){
 		return cola;
 	}
 }

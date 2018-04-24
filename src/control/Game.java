@@ -13,6 +13,10 @@ public class Game implements Gameable{
 		datos=new Datos();
 	}
 	
+	public Datos getDatos() {
+		return datos;
+	}
+
 	@Override
 	public void addMonedaEnCola(){
 		// TODO Auto-generated method stub
@@ -36,7 +40,7 @@ public class Game implements Gameable{
 
 	@Override
 	public void removeMonedaEnCola() {
-		// TODO Auto-generated method stub
+		datos.getCola().desencolar();
 		
 	}
 

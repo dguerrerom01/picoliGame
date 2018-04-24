@@ -20,21 +20,22 @@ public class MyActionListener implements ActionListener {
 		
 		if (boton.getName().equals("btnSeleccionarColor")) {
 			
-			paraUI.getSeleccion().seleccionarMoneda();
+			paraUI.toSeleccion();
 			
-		} else if (boton.getName().equals("btnElegirColor")) {
-			
-			paraUI.getPide().pedirMoneda();
-			
-		} else if (boton.getName().equals("btnBarajarFilas")) {
-			
-			paraUI.getBaraja().reordenarPilas();
-			
-		} else if (boton.getName().equals("btnBorrarColor")) {
-			
-			paraUI.getBorra().borrarColor();
-			
-		}
+		} 
+//			else if (boton.getName().equals("btnElegirColor")) {
+//			
+//			paraUI.getPide().pedirMoneda();
+//			
+//		} else if (boton.getName().equals("btnBarajarFilas")) {
+//			
+//			paraUI.getBaraja().reordenarPilas();
+//			
+//		} else if (boton.getName().equals("btnBorrarColor")) {
+//			
+//			paraUI.getBorra().borrarColor();
+//			
+//		}
 		
 		
 	}

@@ -19,7 +19,7 @@ public class UI extends JFrame {
 	private JPanel panelPila;
 	private JPanel panelLista;
 	protected UIBotones uibotones=new UIBotones();
-	protected UICola uicola = new UICola();
+	public UICola uicola = new UICola();
 
 	/**
 	 * Create the frame.
