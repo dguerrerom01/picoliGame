@@ -10,7 +10,9 @@ public class Cola<T> {
 		this.cola.push(t);
 	}
 	public T desencolar(){
-		return this.cola.removeLast();
+		T temp = cola.getLast();
+		this.cola.removeLast();
+		return temp;
 	}
 	public ArrayDeque<T> getCollectionCola(){
 		return cola;

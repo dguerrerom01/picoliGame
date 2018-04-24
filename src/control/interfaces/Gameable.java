@@ -1,11 +1,13 @@
 package control.interfaces;
 
+import modelo.Colores;
+
 public interface Gameable {
 
 	/**
 	 * introduce una moneda en la cola
 	 */
-	public void addMonedaEnCola();
+	void addMonedaEnCola(Colores color);
 
 	/**
 	 * introduce una moneda en la pila
@@ -19,8 +21,9 @@ public interface Gameable {
 
 	/**
 	 * quita una moneda de la cola
+	 * @return 
 	 */
-	public void removeMonedaEnCola();
+	public Colores removeMonedaEnCola();
 
 	/**
 	 * quita una moneda de una de las pilas
@@ -53,5 +56,7 @@ public interface Gameable {
 	 * @return true monedas > requisito
 	 */
 	public boolean comprobarLose();
+
+
 
 }

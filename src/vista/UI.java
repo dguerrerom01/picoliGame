@@ -39,7 +39,7 @@ public class UI extends JFrame {
 		
 		panelCola = new JPanel();
 		panelCola.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panelCola.add(uicola.getPanel());
+		//panelCola.add(uicola.getPanel());
 		GridBagConstraints gbc_panelCola = new GridBagConstraints();
 		gbc_panelCola.gridheight = 3;
 		gbc_panelCola.insets = new Insets(0, 0, 0, 5);
@@ -69,7 +69,7 @@ public class UI extends JFrame {
 		contentPane.add(panelLista, gbc_panelLista);
 		
 		panelBotones = new JPanel();
-		panelBotones.add(uibotones.getPanel());
+		//panelBotones.add(uibotones.getPanel());
 		panelBotones.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		GridBagConstraints gbc_panelBotones = new GridBagConstraints();
 		gbc_panelBotones.gridwidth = 2;
