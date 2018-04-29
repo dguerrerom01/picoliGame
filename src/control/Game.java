@@ -32,9 +32,8 @@ public class Game implements Gameable{
 	}
 
 	@Override
-	public void addMonedaEnLista() {
-		// TODO Auto-generated method stub
-		
+	public void addMonedaEnLista(Colores color) {
+		datos.getLista().encolar(color);
 	}
 
 	@Override
@@ -51,13 +50,14 @@ public class Game implements Gameable{
 
 	@Override
 	public void comprobarIgualesEnLista() {
-		// TODO Auto-generated method stub
+		datos.getLista().deduplicar();
 		
 	}
 
 	@Override
 	public void borrarMonedaEnLista() {
 		// TODO Auto-generated method stub
+		// Boton de borrarColor
 		
 	}
 
@@ -82,5 +82,11 @@ public class Game implements Gameable{
 	public Collection<Colores> dameCollecctionCola() {
 		return getDatos().getCola().getCollectionCola();
 	}
+	
+	
+//	public Collection<Colores> dameValoresLista() {		
+//		return getDatos().getLista().getLista();
+//	}
+
 
 }

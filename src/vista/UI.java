@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import utiles.Constantes;
+
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
@@ -58,7 +61,8 @@ public class UI extends JFrame {
 		gbc_panelPila.gridy = 0;
 		contentPane.add(panelPila, gbc_panelPila);
 		
-		panelLista = new JPanel();
+		//panelLista = new JPanel();
+		panelLista = new ListaUI(Constantes.TAMANO_LISTA_LADO);
 		panelLista.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		GridBagConstraints gbc_panelLista = new GridBagConstraints();
 		gbc_panelLista.gridheight = 2;

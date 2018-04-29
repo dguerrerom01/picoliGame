@@ -17,7 +17,7 @@ public interface Gameable {
 	/**
 	 * introduce una moneda en la lista
 	 */
-	public void addMonedaEnLista();
+	public void addMonedaEnLista(Colores color);
 
 	/**
 	 * quita una moneda de la cola
