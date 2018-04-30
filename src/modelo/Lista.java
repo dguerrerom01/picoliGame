@@ -14,11 +14,11 @@ public class Lista<T> {
 		return this.lista.remove(index);
 	}
 
-	public void deduplicar() {
+	public void borrarDuplicados() {
 		for (int i = 0; i < lista.size() - 1; i++) {
 			if (lista.get(i).equals(lista.get(i + 1))) {
 				lista.remove(i);
-				lista.remove(i + 1);
+				lista.remove(i);
 				i = -1;
 			}
 		}

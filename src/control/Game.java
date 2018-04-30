@@ -50,7 +50,7 @@ public class Game implements Gameable{
 
 	@Override
 	public void comprobarIgualesEnLista() {
-		datos.getLista().deduplicar();
+		datos.getLista().borrarDuplicados();
 		
 	}
 
