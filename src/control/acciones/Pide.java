@@ -1,29 +1,23 @@
 package control.acciones;
 
-import java.util.Collection;
-import java.util.Iterator;
+import javax.swing.JButton;
 
 import control.ParaUI;
 import control.interfaces.Pedible;
 import modelo.Colores;
-import vista.JLabelModel;
 
 public class Pide implements Pedible{
-
+	private int usos = utiles.Constantes.PETICION_COLOR_MAX; 
 	@Override
 	public Colores pedirMoneda(ParaUI paraUI) {
-		Collection<Colores> cola = paraUI.getGame().dameCollecctionCola();
-		Colores color=Colores.amarillo;
-		paraUI.getGame().addMonedaEnCola(color);
-		Colores ultimoColor=paraUI.getGame().removeMonedaEnCola();
-		System.out.println(ultimoColor);
-		for (Iterator iterator = cola.iterator(); iterator.hasNext();) {
-			Colores colores = (Colores) iterator.next();
-			paraUI.uicola.add(new JLabelModel(colores.getColor()));
+		JButton jButton=paraUI.getBotones().get(1);
+		if (usos>0) {
+			usos--;
+			jButton.setText("Pedir Color (x"+usos+")");
+			Colores color=(Colores) paraUI.getComboPedir().getSelectedItem();
+			return color;
 		}
-		System.out.println(cola);
-		paraUI.uicola.revalidate();
-		return ultimoColor;
+		return null;
 	}
 
 }

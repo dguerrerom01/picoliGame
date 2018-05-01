@@ -7,7 +7,7 @@ import org.junit.Test;
 public class PedibleTest {
 
 	@Test
-	public void test() {
+	public void testPedirMoneda() {
 		fail("Not yet implemented");
 	}
 

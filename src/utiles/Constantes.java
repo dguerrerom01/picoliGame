@@ -13,6 +13,6 @@ public final class Constantes {
 	public final static int PETICION_BARAJAR_MAX=3;
 	public final static int TAMANO_HISTORICO=5;
 	public final static int CANTIDAD_COLORES_SELECCION=3;
-	public final static int CANTIDAD_COLORES_TOTALES=Colores.getCantidadElementos();
+	public final static int CANTIDAD_COLORES_TOTALES=5;
 }
 	
