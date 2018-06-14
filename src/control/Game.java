@@ -1,7 +1,5 @@
 package control;
 
-import java.util.Collection;
-
 import control.interfaces.Gameable;
 import modelo.Colores;
 import modelo.Datos;
@@ -20,10 +18,13 @@ public class Game implements Gameable{
 	}
 
 	@Override
-	public void addMonedaEnCola(Colores color){
-		datos.getCola().encolar(color);
+	public void addMonedaEnCola(){
+		// TODO Auto-generated method stub
 	}
 	
+	public void addMonedaEnColaT(Colores color) {//TODO borrar
+		datos.getCola().encolar(color);
+	}
 
 	@Override
 	public void addMonedaEnPila() {
@@ -37,8 +38,8 @@ public class Game implements Gameable{
 	}
 
 	@Override
-	public Colores removeMonedaEnCola() {
-		return datos.getCola().desencolar();
+	public void removeMonedaEnCola() {
+		datos.getCola().desencolar();
 		
 	}
 
@@ -79,6 +80,7 @@ public class Game implements Gameable{
 		return false;
 	}
 
+<<<<<<< HEAD
 	public Collection<Colores> dameCollecctionCola() {
 		return getDatos().getCola().getCollectionCola();
 	}
@@ -89,4 +91,6 @@ public class Game implements Gameable{
 //	}
 
 
+=======
+>>>>>>> parent of da497b5... a
 }
