@@ -33,7 +33,11 @@ public class ParaUI extends UI{
 	private void prepararGame() {
 		for (int i = 0; i < utiles.Constantes.TAMANO_COLA; i++) {
 			Colores color = darColorRandom();
+<<<<<<< HEAD
 			game.addMonedaEnColaT(color);//TODO
+=======
+			game.addMonedaEnCola(color);//TODO
+>>>>>>> parent of 7999c3c... end
 			this.uicola.getPanelColaColores().add(new JLabelModel(color.getColor()));
 		}
 //		Collection<Colores> cola = game.datos.getCola().getCola();
@@ -63,7 +67,12 @@ public class ParaUI extends UI{
 	}
 	
 	public void toSeleccion(){
+<<<<<<< HEAD
 		this.seleccion.seleccionarMoneda(this);
+=======
+		Colores colorTemp = this.seleccion.seleccionarMoneda(this);
+		//meter el color en la pila
+>>>>>>> parent of 7999c3c... end
 	}
 
 	public Game getGame() {

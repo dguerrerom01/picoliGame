@@ -1,5 +1,10 @@
 package control.interfaces;
 
+<<<<<<< HEAD
+=======
+import modelo.Colores;
+
+>>>>>>> parent of 7999c3c... end
 public interface Gameable {
 
 	/**
@@ -15,7 +20,11 @@ public interface Gameable {
 	/**
 	 * introduce una moneda en la lista
 	 */
+<<<<<<< HEAD
 	public void addMonedaEnLista(Colores color);
+=======
+	public void addMonedaEnLista();
+>>>>>>> parent of 7999c3c... end
 
 	/**
 	 * quita una moneda de la cola
@@ -53,5 +62,10 @@ public interface Gameable {
 	 * @return true monedas > requisito
 	 */
 	public boolean comprobarLose();
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> parent of 7999c3c... end
 
 }

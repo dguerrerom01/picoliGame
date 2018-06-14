@@ -6,9 +6,12 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+<<<<<<< HEAD
 
 import utiles.Constantes;
 
+=======
+>>>>>>> parent of 7999c3c... end
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
@@ -42,7 +45,11 @@ public class UI extends JFrame {
 		
 		panelCola = new JPanel();
 		panelCola.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+<<<<<<< HEAD
 		panelCola.add(uicola.getPanel());
+=======
+		//panelCola.add(uicola.getPanel());
+>>>>>>> parent of 7999c3c... end
 		GridBagConstraints gbc_panelCola = new GridBagConstraints();
 		gbc_panelCola.gridheight = 3;
 		gbc_panelCola.insets = new Insets(0, 0, 0, 5);
@@ -61,8 +68,12 @@ public class UI extends JFrame {
 		gbc_panelPila.gridy = 0;
 		contentPane.add(panelPila, gbc_panelPila);
 		
+<<<<<<< HEAD
 		//panelLista = new JPanel();
 		panelLista = new ListaUI(Constantes.TAMANO_LISTA_LADO);
+=======
+		panelLista = new JPanel();
+>>>>>>> parent of 7999c3c... end
 		panelLista.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		GridBagConstraints gbc_panelLista = new GridBagConstraints();
 		gbc_panelLista.gridheight = 2;
@@ -73,7 +84,11 @@ public class UI extends JFrame {
 		contentPane.add(panelLista, gbc_panelLista);
 		
 		panelBotones = new JPanel();
+<<<<<<< HEAD
 		panelBotones.add(uibotones.getPanel());
+=======
+		//panelBotones.add(uibotones.getPanel());
+>>>>>>> parent of 7999c3c... end
 		panelBotones.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		GridBagConstraints gbc_panelBotones = new GridBagConstraints();
 		gbc_panelBotones.gridwidth = 2;

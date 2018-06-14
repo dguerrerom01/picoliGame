@@ -10,4 +10,5 @@ public class Baraja implements Barajable{
 		return false;
 	}
 
+
 }
